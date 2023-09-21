@@ -3,7 +3,7 @@ npm i
 ```
 
 ```
-node --watch ./server.js
+node --watch ./server/server.js
 ```
 
 ```
