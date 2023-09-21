@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "server": "node --watch ./server/server.js",
+    "start": "maestro test ./test.yaml -c"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

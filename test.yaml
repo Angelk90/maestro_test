@@ -1,0 +1,16 @@
+appId: com.app
+jsEngine: graaljs
+---
+- runScript:
+    file: ./server/terminal.js
+    env:
+      exec: "maestro hierarchy"
+- runScript: 
+    file: ./utility/filter_search.js
+    env:
+      file: "${output.terminal}"
+- evalScript: "${console.log(output.fil)}"
+- runScript:
+    file: ./server/terminal.js
+    env:
+      exec: "echo '${output.fil}' > k.json"
